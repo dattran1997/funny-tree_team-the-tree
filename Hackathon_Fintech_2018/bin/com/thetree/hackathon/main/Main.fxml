@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thetree.hackathon.main.MainController">
+   <children>
+      <VBox layoutX="130.0" layoutY="178.0" prefHeight="640.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTreeTableView style="-fx-background-color: #272c4a;">
+               <columns>
+                  <TreeTableColumn prefWidth="96.79998779296875" text="Time" />
+                  <TreeTableColumn prefWidth="139.20001220703125" text="Tag" />
+                  <TreeTableColumn prefWidth="127.20001220703125" text="Amount" />
+               </columns>
+               <columnResizePolicy>
+                  <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </JFXTreeTableView>
+            <AnchorPane prefHeight="234.0" prefWidth="360.0" style="-fx-background-color: #272c4a;">
+               <children>
+                  <JFXButton layoutX="21.0" layoutY="40.0" onAction="#btnExtraFeeTag" text="#ExtraFee" textFill="#fffc00" />
+                  <JFXButton layoutX="138.0" layoutY="40.0" onAction="#btnLivingCostTag" text="#LivingCost" textFill="#eb7dff" />
+                  <JFXButton layoutX="259.0" layoutY="40.0" onAction="#btnFoodsTag" text="#Foods" textFill="#1adcff" />
+                  <JFXTextField fx:id="txtAmount" layoutX="76.0" layoutY="78.0" prefHeight="26.0" prefWidth="203.0" />
+                  <JFXButton layoutX="43.0" layoutY="78.0" onAction="#btnAddOne" text="&lt;" textFill="WHITE" />
+                  <JFXButton layoutX="287.0" layoutY="79.0" onAction="#btnSubOne" text="&gt;" textFill="WHITE" />
+                  <JFXButton layoutX="154.0" layoutY="130.0" onAction="#btnAddTen" prefHeight="26.0" prefWidth="52.0" text="10.000" textFill="WHITE" />
+                  <JFXButton layoutX="55.0" layoutY="131.0" onAction="#btnAddFive" text="5000" textFill="WHITE" />
+                  <JFXButton layoutX="253.0" layoutY="131.0" onAction="#btnAddTwenty" text="20.000" textFill="WHITE" />
+                  <JFXButton layoutX="39.0" layoutY="174.0" onAction="#btnSave" prefHeight="26.0" prefWidth="283.0" style="-fx-background-color: #26c48e;" text="Save" textFill="WHITE" />
+                  <Text fill="WHITE" layoutX="98.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag:" />
+                  <Text fx:id="lblTag" fill="WHITE" layoutX="129.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="67.99999594688416" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

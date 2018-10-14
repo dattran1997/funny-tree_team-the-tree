@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #272c4a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thetree.hackathon.user.LoginController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="353.0" layoutX="3.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../image/avatar.png" />
+         </image></ImageView>
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="40.0" layoutY="307.0" prefHeight="26.0" prefWidth="278.0" promptText="Email" unFocusColor="#26c48e">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="txtPass" layoutX="40.0" layoutY="358.0" prefHeight="26.0" prefWidth="278.0" promptText="Password" unFocusColor="#26c48e">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="loginButton" layoutX="41.0" layoutY="404.0" onAction="#btnLoginPressed" prefHeight="42.0" prefWidth="278.0" style="-fx-background-color: #26c48e;" text="Log in" textFill="WHITE" />
+      <JFXButton layoutX="40.0" layoutY="452.0" onAction="#btnSignUpPressed" prefHeight="42.0" prefWidth="278.0" text="Sign Up" textFill="WHITE" />
+      <Text fx:id="txtStatus" fill="RED" layoutX="40.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="278.4000027179718" />
+   </children>
+</AnchorPane>
